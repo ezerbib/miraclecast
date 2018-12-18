@@ -1,4 +1,4 @@
-bin_SCRIPTS = miracle-gst gstplayer uibc-viewer miracle-omxplayer
+bin_SCRIPTS = miracle-gst gstplayer uibc-viewer miracle-omxplayer miracle-gst-imx6
 EXTRA_DIST = wpa.conf
 
 dbuspolicydir=$(sysconfdir)/dbus-1/system.d
