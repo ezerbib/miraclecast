@@ -133,6 +133,19 @@ To use it just add `--uibc` on `miracle-sinkctl` startup. Single mouse events an
 
  Source [res/miraclecast-completion](https://github.com/albfan/miraclecast/blob/master/res/miraclecast-completion) for autocompletion
 
+## Imx6 support 
+- for SolidRun hummingboard/MicroSOM 1.5 for example
+
+        rfkill unblock all
+        ifconfig wlan0  down
+        ifconfig wlan0  up
+        cd /opt/miraclecast/bin
+        PATH=$PATH:`pwd`
+        export PATH
+        ./miracle-wifid --use-dev &
+        ./miracle-sinkctl  -e miracle-gst-imx6 --gst-debug *:1
+
+
 ## License
 
 This software is licensed under the terms of the GNU-LGPL license. Please see ./COPYING for further information.
